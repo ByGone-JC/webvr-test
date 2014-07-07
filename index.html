@@ -301,7 +301,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         vrBtn.addEventListener("click", function() {
           vrMode = true;
           if (renderer.domElement.webkitRequestFullscreen) {
-            renderer.domElement.webkitRequestFullscreen({ vrDisplay: hmdDevice });
+            renderer.domElement.webkitRequestFullscreen({ vrDisplay: hmdDevice, vrDistortion: false });
           } else if (renderer.domElement.mozRequestFullScreen) {
             renderer.domElement.mozRequestFullScreen({ vrDisplay: hmdDevice });
           }
