@@ -340,7 +340,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
           riftObj.quaternion.x = vrState.orientation.x;
           riftObj.quaternion.y = vrState.orientation.y;
           riftObj.quaternion.z = vrState.orientation.z;
-          riftObj.quaternion.w = vrState.orientation.w;
+          riftObj.quaternion.w = vrState.orientation.w * (vrMode?-1:1);
         }
 
         return true;
